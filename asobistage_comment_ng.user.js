@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ASOBISTAGE comment NG
-// @version      1.0.1
+// @version      1.0.2
 // @description  ASOBISTAGEプレイヤーのユーザー・コメントNG機能
 // @author       dotlab
 // @match        https://asobistage.asobistore.jp/event/*
