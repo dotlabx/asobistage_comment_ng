@@ -73,7 +73,7 @@
         tab.appendChild(btn);
       }
     } else {
-        checkComment();
+      checkComment();
     }
   }).observe(document.querySelector('body'), { childList: true, subtree: true });
 })();
