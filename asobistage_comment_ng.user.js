@@ -4,6 +4,7 @@
 // @description  ASOBISTAGEプレイヤーのユーザー・コメントNG機能
 // @author       dotlab
 // @match        https://asobistage.asobistore.jp/event/*
+// @updateURL    https://github.com/dotlabx/asobistage_comment_ng/raw/main/asobistage_comment_ng.user.js
 // @grant        none
 // ==/UserScript==
 
