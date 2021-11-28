@@ -61,20 +61,18 @@
     }
   };
 
-  var btn = null;
-  var ob = new MutationObserver(function () {
-    if (btn === null) {
+  new MutationObserver(function () {
+    if (document.querySelector('.btn-comment-ng') === null) {
       var tab = document.querySelector('[class^="commentViewer_commentViewer_tab_item"]');
       if (tab !== null) {
-        btn = document.createElement("button");
+        var btn = document.createElement("button");
+        btn.className = 'btn-comment-ng';
         btn.innerText = 'NG追加';
         btn.onclick = addng;
         tab.appendChild(btn);
-        new MutationObserver(function () {
-          checkComment();
-        }).observe(document.querySelector('[class^="commentViewer_commentViewer_inner"]'), { childList: true, subtree: true });
       }
+    } else {
+        checkComment();
     }
-  });
-  ob.observe(document.querySelector('body'), { childList: true, subtree: true });
+  }).observe(document.querySelector('body'), { childList: true, subtree: true });
 })();
